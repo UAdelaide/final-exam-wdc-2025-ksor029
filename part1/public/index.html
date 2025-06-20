@@ -20,24 +20,22 @@
 <body>
     <h1 class="flashing"> DOG of the DAY!!! </h1>
 
-   <div id="app">
-    {{ message }}
+    <div id="app">
+        {{ message }}
     </div>
 
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
-  <script>
-    const app = Vue.createApp({
-      data() {
-        return {
-          message: "Hello World!"
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const app = Vue.createApp({
+        data() {
+            return {
+            message: "Hello World!"
+            }
         }
-      }
-    })
+        })
 
-   app.mount('#app')
-
-  </script>
+    app.mount('#app')
+    </script>
 
 
 </body>
