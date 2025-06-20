@@ -34,11 +34,10 @@
                 }
             },
             mounted () {
+                axios
                 .get('https://dog.ceo/dog-api/documentation/random')
                 .then(response => (this.info = response))
             }
-
-
         });
     </script>
 
