@@ -20,10 +20,10 @@ app.use(function(req, res, next){
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
 
-
-
 // Routes
 
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
 
 
 // const walkRoutes = require('./routes/walkRoutes');
