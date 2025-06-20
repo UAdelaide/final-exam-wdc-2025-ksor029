@@ -24,23 +24,6 @@
         {{ message }}
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-    <script>
-        const vueinst = new Vue({
-            el: '#app',
-            data () {
-                return {
-                    message: null
-                }
-            },
-            mounted () {
-                axios
-                .get('https://dog.ceo/dog-api/documentation/random')
-                .then(response => (this.message = response.message))
-            }
-        });
-    </script>
-
 <!--
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script>
