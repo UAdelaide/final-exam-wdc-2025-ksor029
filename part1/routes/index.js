@@ -9,8 +9,11 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/tae', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/tae', asyc function(req, res) {
+  const [rows] = await db.query(
+    `SELECT * FROM Dogs`
+  );
+  res.send(rows);
 });
 
 module.exports = router;
