@@ -18,7 +18,7 @@ router.get('/api/dogs', async function(req, res) {
 });
 
 /* GET Open Res */
-router.get('/api/dogs', async function(req, res) {
+router.get('/api/walkrequests/open', async function(req, res) {
   const [rows] = await db.query(`
     SELECT WalkRequests.request_id, Dogs.name AS dog_name, WalkRequests.requested_time, WalkRequests.duration_minutes, WalkRequests.location, Users.username FROM WalkRequests INNER JOIN Dogs
       On WalkRequests.dog_id = Dogs.dog_id INNER JOIN Users
