@@ -117,4 +117,5 @@ FROM Dogs where name like 'Hades';
 
 SELECT
     User.username AS walker_username,
-    (SELECT COUNT())
+    (SELECT COUNT()
+    )
