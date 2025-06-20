@@ -66,7 +66,7 @@ INSERT INTO Dogs (name, size, owner_id)
 VALUES
 ('Max', 'medium', 'alice123'),
 ('Bella', 'small', 'carol123'),
-('Goofy', 'medium', 'alice123'),
-('Sora', 'small', 'alice123'),
-('Hades', 'small', 'alice123'),
+('Goofy', 'large', 'alice123'),
+('Sora', 'small', 'shadowcat11'),
+('Hades', 'large', 'shadowcat11');
 
