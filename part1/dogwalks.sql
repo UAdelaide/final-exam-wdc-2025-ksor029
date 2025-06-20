@@ -64,7 +64,8 @@ VALUES
 
 INSERT INTO Dogs (name, size, owner_id)
 SELECT
-    Max, medium,
+    Max, medium, owner_id
+FROM 
 
 
 --('Max', 'medium', 'alice123'),
