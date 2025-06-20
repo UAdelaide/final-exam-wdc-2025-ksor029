@@ -118,7 +118,7 @@ FROM Dogs where name like 'Hades';
 SELECT
     Users.username AS walker_username,
     (SELECT COUNT(*)
-    FROM WalkRatings
+    FROM WalkRatings INNER JOIN Users
     ON WalkRatings.walker_id = Users.username)
 FROM Users
 WHERE Users.role = 'walker';
