@@ -62,10 +62,10 @@
             xhttp.onload = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     const resJSON = JSON.parse(this.response);
-                    const img = resJSON.message;
+                    const randomDogImage = resJSON.message;
 
                     const doggoIMG = document.createElement('img');
-                    doggoIMG.setAttribute('src', doggoIMG);
+                    doggoIMG.setAttribute('src', randomDogImage);
 
                     document.body.appendChild(doggoIMG);
                 }
