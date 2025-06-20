@@ -12,6 +12,30 @@
 --('4', '2025-06-11 07:00:00', '60', 'Byroden Blvd', 'open'),
 --('5', '2025-06-11 07:00:00', '60', 'Byroden Blvd', 'open');
 
+----------------------------------------
+
+INSERT INTO Dogs (name, size, owner_id)
+SELECT
+    Bella, small, owner_id
+FROM Users where username like 'carol123';
+
+INSERT INTO Dogs (name, size, owner_id)
+SELECT
+    Goofy, large, owner_id
+FROM Users where username like 'alice123';
+
+INSERT INTO Dogs (name, size, owner_id)
+SELECT
+    Sora, small, owner_id
+FROM Users where username like 'shadowcat11';
+
+INSERT INTO Dogs (name, size, owner_id)
+SELECT
+    Hades, large, owner_id
+FROM Users where username like 'shadowcat11';
+
+----------------------------
+
 
 
 INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status)
