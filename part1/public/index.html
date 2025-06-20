@@ -36,7 +36,7 @@
             mounted () {
                 axios
                 .get('https://dog.ceo/dog-api/documentation/random')
-                .then(response => (this.message = response))
+                .then(response => (this.message = response.message))
             }
         });
     </script>
