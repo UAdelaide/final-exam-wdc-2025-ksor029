@@ -8,5 +8,7 @@ const pool = mysql.createPool({
    user: process.env.DB_USER || 'root',
    password: process.env.DB_PASSWORD || 'mypassword',
    database: process.env.DB_NAME || 'DogWalkService',
-   waitForConnections
+   waitForConnections: true,
+   connectionLimit: 10,
+   queueLimit: 0
 });
