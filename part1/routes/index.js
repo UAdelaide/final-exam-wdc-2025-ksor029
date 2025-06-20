@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-/* idk what im doing huhu */
+/* TEST API END POINTS */
 router.get('/', function(req, res, next){
   //code
 });
