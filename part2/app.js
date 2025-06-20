@@ -10,6 +10,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 var mysql = require('mysql');
 
+var dbConnectionPool = mysql.crea
 
 
 // Routes
