@@ -121,3 +121,4 @@ SELECT
     FROM WalkRatings
     ON WalkRatings.walker_id = User.username
     )
+FROM 
