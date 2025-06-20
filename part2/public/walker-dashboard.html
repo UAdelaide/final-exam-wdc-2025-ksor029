@@ -68,7 +68,9 @@
           window
             .fetch(currUserReq)
             .then((response) =>{
-              if(!reponse.ok)
+              if(!reponse.ok){
+                throw new Error('')
+              }
             })
 
         }
