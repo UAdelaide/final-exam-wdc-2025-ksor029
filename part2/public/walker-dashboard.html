@@ -69,7 +69,7 @@
             .fetch(currUserReq)
             .then((response) =>{
               if(!reponse.ok){
-                throw new Error('')
+                throw new Error(Error(result.error || 'Retrieving User Failed')
               }
             })
 
