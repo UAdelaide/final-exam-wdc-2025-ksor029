@@ -18,11 +18,12 @@
       </div>
       <div class="card-body">
         <form @submit.prevent="submitWalkRequest">
-          <!-- QUESTION 15 EDIT -->
+          <!-- QUESTION 15 EDIT START -->
           <div class="mb-3">
-            <label class="form-label">Dog ID</label>
+            <label class="form-label">Select </label>
             <input v-model="form.dog_id" type="number" class="form-control" required>
           </div>
+          <!-- QUESTION 15 EDIT END-->
           <div class="mb-3">
             <label class="form-label">Requested Date & Time</label>
             <input v-model="form.requested_time" type="datetime-local" class="form-control" required>
