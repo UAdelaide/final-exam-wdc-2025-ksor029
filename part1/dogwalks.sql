@@ -69,7 +69,6 @@ FROM Users where username like 'alice123',
 SELECT
     'Bella', 'small', owner_id
 FROM Users where username like 'carol123',
-
 SELECT
     'Goofy', 'large', owner_id
 FROM Users where username like 'alice123',
@@ -77,7 +76,7 @@ SELECT
     'Sora', 'small', owner_id
 FROM Users where username like 'shadowcat11',
 SELECT
-    'Max', 'medium', owner_id
+    'Hades', 'large', owner_id
 FROM Users where username like 'shadowcat11';
 
 --('Max', 'medium', 'alice123'),
