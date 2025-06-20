@@ -21,7 +21,7 @@
     <h1 class="flashing"> DOG of the DAY!!! </h1>
 
     <div id="app">
-        <img id="api-img" v-bind:src="imgURL">
+        <img id="api-img" v-bind:src="a">
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
@@ -29,7 +29,7 @@
         const vueinst = new Vue({
             el: "#app",
             data: {
-                imgURL: fuck
+                apiRes: null
             },
             mounted() {
                 axios
