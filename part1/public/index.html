@@ -61,12 +61,10 @@
             var xhttp = new XMLHttpRequest();
             xhttp.onload = function() {
                 if (this.readyState == 4 && this.status == 200) {
-                    const bttn1 = document.getElementById('button-1');
-                    bttn1.style.display = 'block';
 
-                    const doggoIMG = document.createElement('p');
-                    const jsonRES = JSON.parse(this.response);
-                    const shitto = jsonRES.message;
+                    const doggoIMG = document.createElement('img');
+                    const resJSON = JSON.parse(this.response);
+                    const shitto = resJSON.message;
                     doggoIMG.innerText = shitto;
 
                     document.body.appendChild(doggoIMG);
