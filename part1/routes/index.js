@@ -7,7 +7,9 @@ router.get('/', function(req, res, next) {
 });
 
 /* idk what im doing huhu */
-router.get('')
+router.get('/', function(req, res, next){
+  //code
+});
 
 
 
