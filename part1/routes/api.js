@@ -4,5 +4,8 @@ const db = require('.../models/db');
 
 /* GET home page. */
 router.get('/api/dogs', function(req, res) {
-  res.render('index', { title: 'Express' });
+  const [rows] = await db.query(
+    `SELECT * FROM `
+  )
+
 });
