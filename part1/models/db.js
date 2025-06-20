@@ -6,5 +6,6 @@ const mysql = require('mysql2/promise');
 const pool = mysql.createPool({
    host: process.env.DB_HOST || 'localhost',
    user: process.env.DB_USER || 'root',
-   password
+   password: process.env.DB_PASSWORD || 'mypassword',
+   database: process
 });
