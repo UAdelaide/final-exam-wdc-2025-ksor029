@@ -120,6 +120,8 @@ SELECT
     (SELECT COUNT(*)
     FROM WalkRatings INNER JOIN Users
     ON WalkRatings.walker_id = Users.username) AS total_ratings,
-    
+    (SELECT AVG(WalkRatings.)
+    FROM WalkRatings INNER JOIN Users
+    ON WalkRatings.walker_id = Users.username) AS total_ratings,
 FROM Users
 WHERE Users.role = 'walker';
