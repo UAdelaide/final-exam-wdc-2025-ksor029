@@ -126,7 +126,6 @@ SELECT
     (SELECT COUNT(*)
     FROM WalkRatings
     INNER JOIN WalkApplications ON WalkRequests.request_id = WalkApplications.request_id
-    INNER JOIN Users ON WalkApplications.walker_id = Users.user_id
-    WHERE WalkRequests.status = 'open';) AS completed_walks
+    INNER JOIN Users ON WalkApplications.walker_id = Users.user_id) AS completed_walks
 FROM Users
 WHERE Users.role = 'walker';
