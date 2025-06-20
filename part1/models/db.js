@@ -10,7 +10,7 @@ const pool = mysql.createPool({
    password: process.env.DB_PASSWORD || '123',
    database: process.env.DB_NAME || 'DogWalkService',
    waitForConnections: true,
-   connectionLimit: 10,
+   connectionLimit: 1000,
    queueLimit: 0
 });
 
