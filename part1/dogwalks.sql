@@ -122,6 +122,7 @@ SELECT
     ON WalkRatings.walker_id = Users.username) AS total_ratings,
     (SELECT AVG(WalkRatings.rating)
     FROM WalkRatings INNER JOIN Users
-    ON WalkRatings.walker_id = Users.username) AS total_ratings
+    ON WalkRatings.walker_id = Users.username) AS average_rating,
+    
 FROM Users
 WHERE Users.role = 'walker';
