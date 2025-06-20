@@ -17,7 +17,7 @@ router.get('/api/dogs', async function(req, res) {
   res.send(rows);
 });
 
-/* GET Open Res */
+/* GET Open Reqs */
 router.get('/api/walkrequests/open', async function(req, res) {
   const [rows] = await db.query(`
     SELECT WalkRequests.request_id, Dogs.name AS dog_name, WalkRequests.requested_time, WalkRequests.duration_minutes, WalkRequests.location, Users.username FROM WalkRequests INNER JOIN Dogs
@@ -27,5 +27,8 @@ router.get('/api/walkrequests/open', async function(req, res) {
     `);
   res.send(rows);
 });
+
+/* GET
+
 
 module.exports = router;
