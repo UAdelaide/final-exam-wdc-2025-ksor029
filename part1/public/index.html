@@ -61,10 +61,10 @@
             var xhttp = new XMLHttpRequest();
             xhttp.onload = function() {
                 if (this.readyState == 4 && this.status == 200) {
-
-                    const doggoIMG = document.createElement('img');
                     const resJSON = JSON.parse(this.response);
                     const shitto = resJSON.message;
+
+                    const doggoIMG = document.createElement('img');
                     doggoIMG.innerText = shitto;
 
                     document.body.appendChild(doggoIMG);
