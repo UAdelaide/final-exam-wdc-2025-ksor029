@@ -70,4 +70,4 @@ VALUES
 ('Sora', 'small', 'shadowcat11'),
 ('Hades', 'large', 'shadowcat11');
 
-INSERT INTO WalkRequests ()
+INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes,)
