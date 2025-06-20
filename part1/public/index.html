@@ -39,20 +39,6 @@
     </script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-    <script>
-        const vueinst = new Vue({
-            el: "#app",
-            data: {
-                apiRes: null
-            },
-            mounted() {
-                axios
-                    .get('https://dog.ceo/api/breeds/image/random')
-                    .then(response => (this.imgURL = response.message))
-            }
-        })
-    </script>
 </body>
 
 
