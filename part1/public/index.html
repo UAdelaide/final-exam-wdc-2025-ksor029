@@ -15,15 +15,7 @@
             100% { opacity: 0;   }
         }
     </style>
-
-</head>
-<body>
-    <h1 class="flashing"> DOG of the DAY!!! </h1>
-
-    <div>
-        <img id="api-img" v-bind:src="imgURL">
-
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
         <script>
             const vueinst = new Vue({
                 el: "#api-img",
@@ -37,6 +29,14 @@
                 }
             })
         </script>
+</head>
+<body>
+    <h1 class="flashing"> DOG of the DAY!!! </h1>
+
+    <div>
+        <img id="api-img" v-bind:src="imgURL">
+
+
     </div>
 
 </body>
