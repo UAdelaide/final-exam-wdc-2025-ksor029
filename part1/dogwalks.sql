@@ -115,4 +115,6 @@ FROM Dogs where name like 'Hades';
 
 
 
-SELECT User
+SELECT
+    User.username AS walker_username,
+    
