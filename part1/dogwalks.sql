@@ -119,6 +119,7 @@ SELECT
     Users.username AS walker_username,
     (SELECT COUNT(*)
     FROM WalkRatings INNER JOIN Users
-    ON WalkRatings.walker_id = Users.username) 
+    ON WalkRatings.walker_id = Users.username) AS total_ratings,
+    
 FROM Users
 WHERE Users.role = 'walker';
