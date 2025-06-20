@@ -119,5 +119,5 @@ SELECT
     User.username AS walker_username,
     (SELECT COUNT(*)
     FROM WalkRatings
-    ON walker_id =
+    ON WalkRatings.walker_id =
     )
