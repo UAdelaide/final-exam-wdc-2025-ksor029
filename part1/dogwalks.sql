@@ -124,7 +124,7 @@ SELECT
     FROM WalkRatings INNER JOIN Users
     ON WalkRatings.walker_id = Users.username) AS average_rating,
     (SELECT COUNT(*)
-    FROM WalkApplication
+    FROM WalkApplication INNER JOIN Users
     )
 FROM Users
 WHERE Users.role = 'walker';
