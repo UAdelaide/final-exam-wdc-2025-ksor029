@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET Dogs */
-router.get('/dogs', async function(req, res) {
+router.get('/api/dogs', async function(req, res) {
   const [rows] = await db.query(
     `SELECT * FROM Dogs`
   );
