@@ -21,9 +21,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 // Middleware
-app.use(function(req, res, next){
-    req.pool = dbConnectionPool;
-    next();
+app.use(function(req, res, next) {
+  req.pool = dbConnectionPool;
+  next();
 });
 
 app.use(logger('dev'));
