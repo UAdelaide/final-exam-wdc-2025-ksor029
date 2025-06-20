@@ -117,5 +117,7 @@ FROM Dogs where name like 'Hades';
 
 SELECT
     Users.username AS walker_username
+    (SELECT COUNT(*)
+    FROM W)
 FROM Users
 WHERE Users.role = 'walker';
