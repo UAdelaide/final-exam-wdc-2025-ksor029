@@ -126,7 +126,8 @@ SELECT
     (SELECT COUNT(*)
     FROM WalkRatings
     INNER JOIN WalkApplications ON WalkRequests.request_id = WalkApplications.request_id
-    INNER JOIN Users ON WalkApplications.wa
+    INNER JOIN Users ON WalkApplications.walker_id = Users.user_id
+    WHERE Wa
 
 
 
