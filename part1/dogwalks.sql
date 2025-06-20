@@ -63,8 +63,8 @@ VALUES
 ('shadowcat11', 'cathy@example.com', 'hashed357', 'owner');
 
 INSERT INTO Dogs (name, size, owner_id)
-VALUES
-
+SELECT
+    Max, medium
 
 
 --('Max', 'medium', 'alice123'),
