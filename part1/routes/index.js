@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 router.get('/api/dogs', async function(req, res) {
   const [rows] = await db.query(`
     SELECT Dogs.name AS dog_name, Dogs.size, Users.username AS owner_username FROM Dogs INNER JOIN Users
-    -> ON Dogs.owner_id = Users.user_id;
+    ON Dogs.owner_id = Users.user_id;
     `);
   res.send(rows);
 });
@@ -20,8 +20,10 @@ router.get('/api/dogs', async function(req, res) {
 /* GET Open Res */
 router.get('/api/dogs', async function(req, res) {
   const [rows] = await db.query(`
-    SELECT Dogs.name AS dog_name, Dogs.size, Users.username AS owner_username FROM Dogs INNER JOIN Users
-    -> ON Dogs.owner_id = Users.user_id;
+    SELECT WalkRequests.request_id, Dogs.name AS dog_name, WalkRequests.requested_time, WalkRequests.duration_minutes, WalkRequests.location, Users.username FROM WalkRequests INNER JOIN Dogs
+      On WalkRequests.dog_id = Dogs.dog_id INNER JOIN Users
+      ON Dogs.owner_id = Users.user_id
+      WHERE WalkRequests.status = 'open';
     `);
   res.send(rows);
 });
