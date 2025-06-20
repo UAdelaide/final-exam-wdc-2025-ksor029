@@ -86,9 +86,12 @@ FROM Users where username like 'shadowcat11';
 --('Hades', 'large', 'shadowcat11');
 
 INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status)
-VALUES
-('1', '2025-06-10 08:00:00', '30', 'Parklands', 'open'),
-('2', '2025-06-10 09:30:00', '45', 'Beachside Ave', 'accepted'),
-('3', '2025-06-10 08:00:00', '30', 'Parklands', 'open'),
-('4', '2025-06-11 07:00:00', '60', 'Byroden Blvd', 'open'),
-('5', '2025-06-11 07:00:00', '60', 'Byroden Blvd', 'open');
+
+
+
+--VALUES
+--('1', '2025-06-10 08:00:00', '30', 'Parklands', 'open'),
+--('2', '2025-06-10 09:30:00', '45', 'Beachside Ave', 'accepted'),
+--('3', '2025-06-10 08:00:00', '30', 'Parklands', 'open'),
+--('4', '2025-06-11 07:00:00', '60', 'Byroden Blvd', 'open'),
+--('5', '2025-06-11 07:00:00', '60', 'Byroden Blvd', 'open');
