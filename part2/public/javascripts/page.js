@@ -188,7 +188,7 @@ function login(){
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             alert("Welcome "+this.responseText);
-            document.cookie = "username="+this.responseText; // Create cookie
+            document.cookie = "username="+this.responseText; // Create cookie. Q13
         } else if (this.readyState == 4 && this.status >= 400) {
             alert("Login failed");
         }
