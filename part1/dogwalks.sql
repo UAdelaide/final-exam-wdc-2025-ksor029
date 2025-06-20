@@ -115,18 +115,3 @@ FROM Dogs where name like 'Hades';
 
 
 
-SELECT
-    Users.username AS walker_username,
-    (SELECT COUNT(*)
-    FROM WalkRatings INNER JOIN Users
-    ON WalkRatings.walker_id = Users.username) AS total_ratings,
-    (SELECT AVG(WalkRatings.rating)
-    FROM WalkRatings INNER JOIN Users
-    ON WalkRatings.walker_id = Users.username) AS average_rating,
-    (SELECT COUNT(*)
-    FROM Users
-    INNER JOIN WalkApplications ON Users.user_id = WalkApplications.walker_id
-    INNER JOIN WalkRequests ON WalkApplications.request_id = WalkRequests.request_id
-    WHERE WalkRequests.status = 'open') AS completed_walks
-FROM Users
-WHERE Users.role = 'walker';
