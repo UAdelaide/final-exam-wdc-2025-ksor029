@@ -12,14 +12,13 @@ var dbConnectionPool = mysql.createPool({
 const app = express();
 
 // Middleware
-app.use(express.json());
-app.use(express.static(path.join(__dirname, '/public')));
-
 app.use(function(req, res, next){
     req.pool = dbConnectionPool;
     next();
 });
 
+app.use(express.json());
+app.use(express.static(path.join(__dirname, '/public')));
 
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
