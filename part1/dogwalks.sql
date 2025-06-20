@@ -74,11 +74,11 @@ SELECT
     'Goofy', 'large', owner_id
 FROM Users where username like 'alice123',
 SELECT
-    'Max', 'medium', owner_id
-FROM Users where username like 'alice123',
+    'Sora', 'small', owner_id
+FROM Users where username like 'shadowcat11',
 SELECT
     'Max', 'medium', owner_id
-FROM Users where username like 'alice123';
+FROM Users where username like 'shadowcat11';
 
 --('Max', 'medium', 'alice123'),
 --('Bella', 'small', 'carol123'),
