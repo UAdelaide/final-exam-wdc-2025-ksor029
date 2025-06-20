@@ -28,7 +28,7 @@ router.get('/api/walkrequests/open', async function(req, res) {
   res.send(rows);
 });
 
-/* GET
+/* GET Walker summary */
 
 
 module.exports = router;
