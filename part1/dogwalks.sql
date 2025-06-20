@@ -62,11 +62,6 @@ VALUES
 ('timmy000', 'timbo@example.com', 'hashed159', 'walker'),
 ('shadowcat11', 'cathy@example.com', 'hashed357', 'owner');
 
-INSERT INTO Dogs ()
+INSERT INTO Dogs (name, size, owner_id)
 VALUES
-('alice123', 'alice@example.com', 'hashed123', 'owner'),
-('bobwalker', 'bob@example.com', 'hashed456', 'walker'),
-('carol123', 'carol@example.com', 'hashed789', 'owner'),
-('timmy000', 'timbo@example.com', 'hashed159', 'walker'),
-('shadowcat11', 'cathy@example.com', 'hashed357', 'owner');
-
+('Max', 'medi'
