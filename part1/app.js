@@ -20,6 +20,12 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+// Middleware
+app.use(function(req, res, next){
+    req.pool = dbConnectionPool;
+    next();
+});
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -52,20 +58,8 @@ module.exports = app;
 
 
 
-
-const express = require('express');
-const path = require('path');
-require('dotenv').config();
-
-
-
-const app = express();
-
 // Middleware
-app.use(function(req, res, next){
-    req.pool = dbConnectionPool;
-    next();
-});
+
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
