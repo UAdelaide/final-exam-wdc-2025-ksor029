@@ -6,9 +6,9 @@ CREATE TABLE Users (
     username VARCHAR(50) UNIQUE NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
     password_hash VARCHAR(255) NOT NULL,
-    role ENUM('owner', 'walker') NOT NULL,
+    role ENUM('owner', '') NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+);walker
 
 CREATE TABLE Dogs (
     dog_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -57,5 +57,5 @@ CREATE TABLE WalkRatings (
 INSERT INTO Users (username, email, password_hash, role)
 VALUES
 ('alice123', 'alice@example.com', 'hashed123', 'owner'),
-('bobwalker', 'bob@example.com', 'hashed123', 'owner'),
-('alice123', 'alice@example.com', 'hashed123', 'owner');
+('bobwalker', 'bob@example.com', 'hashed456', 'walker'),
+('carol123', 'alice@example.com', 'hashed123', 'owner');
