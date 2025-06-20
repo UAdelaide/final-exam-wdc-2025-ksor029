@@ -63,7 +63,11 @@
         // Q16
         async function getCurrentUser(){
           const currUser = null;
-          const currUserReq = new Request('/api/users/me')
+          const currUserReq = new Request('/api/users/me');
+
+          window
+            .fetch(currUserReq)
+            .then()
 
         }
 
