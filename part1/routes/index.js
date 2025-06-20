@@ -18,7 +18,7 @@ router.get('/api/walkers/summary', function(req, res, next){
 });
 
 router.get('/result', function(req, res, next) {
-  //Connect to the database
+  // Connect to the database
   req.pool.getConnection( function(err,connection) {
     if (err) {
         res.sendStatus(500);
