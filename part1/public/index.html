@@ -65,8 +65,8 @@
                     bttn1.style.display = 'block';
 
                     const doggoIMG = document.createElement('p');
-                    const response2 = JSON.parse(this.response);
-                    const shitto = response2.message;
+                    const jsonRES = JSON.parse(this.response);
+                    const shitto = jsonRES.message;
                     doggoIMG.innerText = shitto;
 
                     document.body.appendChild(doggoIMG);
