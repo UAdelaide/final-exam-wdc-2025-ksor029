@@ -62,7 +62,7 @@ VALUES
 ('timmy000', 'timbo@example.com', 'hashed159', 'walker'),
 ('shadowcat11', 'cathy@example.com', 'hashed357', 'owner');
 
-INSERT INTO Users (username, email, password_hash, role)
+INSERT INTO Dogs ()
 VALUES
 ('alice123', 'alice@example.com', 'hashed123', 'owner'),
 ('bobwalker', 'bob@example.com', 'hashed456', 'walker'),
