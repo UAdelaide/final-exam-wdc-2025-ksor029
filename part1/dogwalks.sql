@@ -91,15 +91,15 @@ SELECT
 FROM Dogs where name like 'MAX',
 SELECT
     dog_id, '2025-06-10 09:30:00', '45', 'Beachside Ave', 'accepted'
-FROM Dogs where name like 'MAX',
+FROM Dogs where name like 'Bella',
 SELECT
     dog_id, '2025-06-10 08:00:00', '30', 'Parklands', 'open'
-FROM Dogs where name like 'MAX',
+FROM Dogs where name like 'Goofy',
 SELECT
     dog_id, '2025-06-11 07:00:00', '60', 'Byroden Blvd', 'open'
-FROM Dogs where name like 'MAX',
+FROM Dogs where name like 'Sora',
 SELECT
-    dog_id, '2025-06-10 08:00:00', '30', 'Parklands', 'open'
+    dog_id, '2025-06-11 07:00:00', '60', 'Byroden Blvd', 'open'
 FROM Dogs where name like 'MAX';
 
 --VALUES
