@@ -112,6 +112,3 @@ INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, st
 SELECT
     dog_id, '2025-06-11 07:00:00', '60', 'Byroden Blvd', 'open'
 FROM Dogs where name like 'Hades';
-
-SELECT * FROM WalkRequests
-WHERE WalkRequests.status = 'open';
