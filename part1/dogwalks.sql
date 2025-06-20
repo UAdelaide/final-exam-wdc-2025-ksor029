@@ -79,11 +79,7 @@ SELECT
     'Hades', 'large', owner_id
 FROM Users where username like 'shadowcat11';
 
---('Max', 'medium', 'alice123'),
---('Bella', 'small', 'carol123'),
---('Goofy', 'large', 'alice123'),
---('Sora', 'small', 'shadowcat11'),
---('Hades', 'large', 'shadowcat11');
+
 
 INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status)
 SELECT
@@ -101,10 +97,3 @@ FROM Dogs where name like 'Sora',
 SELECT
     dog_id, '2025-06-11 07:00:00', '60', 'Byroden Blvd', 'open'
 FROM Dogs where name like 'Hades';
-
---VALUES
---('1', '2025-06-10 08:00:00', '30', 'Parklands', 'open'),
---('2', '2025-06-10 09:30:00', '45', 'Beachside Ave', 'accepted'),
---('3', '2025-06-10 08:00:00', '30', 'Parklands', 'open'),
---('4', '2025-06-11 07:00:00', '60', 'Byroden Blvd', 'open'),
---('5', '2025-06-11 07:00:00', '60', 'Byroden Blvd', 'open');

@@ -1,0 +1,13 @@
+--('Max', 'medium', 'alice123'),
+--('Bella', 'small', 'carol123'),
+--('Goofy', 'large', 'alice123'),
+--('Sora', 'small', 'shadowcat11'),
+--('Hades', 'large', 'shadowcat11');
+
+
+--VALUES
+--('1', '2025-06-10 08:00:00', '30', 'Parklands', 'open'),
+--('2', '2025-06-10 09:30:00', '45', 'Beachside Ave', 'accepted'),
+--('3', '2025-06-10 08:00:00', '30', 'Parklands', 'open'),
+--('4', '2025-06-11 07:00:00', '60', 'Byroden Blvd', 'open'),
+--('5', '2025-06-11 07:00:00', '60', 'Byroden Blvd', 'open');
