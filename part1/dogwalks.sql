@@ -122,4 +122,4 @@ SELECT
     ON WalkRatings.walker_id = User.username
     )
 FROM Users
-WHERE User
+WHERE Users.role = 'walker';
