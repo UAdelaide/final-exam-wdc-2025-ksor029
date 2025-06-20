@@ -67,16 +67,24 @@ VALUES
 INSERT INTO Dogs (name, size, owner_id)
 SELECT
     'Max', 'medium', user_id
-FROM Users where username like 'alice123',
+FROM Users where username like 'alice123';
+
+INSERT INTO Dogs (name, size, owner_id)
 SELECT
     'Bella', 'small', user_id
-FROM Users where username like 'carol123',
+FROM Users where username like 'carol123';
+
+INSERT INTO Dogs (name, size, owner_id)
 SELECT
     'Goofy', 'large', user_id
-FROM Users where username like 'alice123',
+FROM Users where username like 'alice123';
+
+INSERT INTO Dogs (name, size, owner_id)
 SELECT
     'Sora', 'small', user_id
-FROM Users where username like 'shadowcat11',
+FROM Users where username like 'shadowcat11';
+
+INSERT INTO Dogs (name, size, owner_id)
 SELECT
     'Hades', 'large', user_id
 FROM Users where username like 'shadowcat11';
