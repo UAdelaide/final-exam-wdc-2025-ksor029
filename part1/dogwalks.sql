@@ -127,6 +127,6 @@ SELECT
     FROM WalkRatings
     INNER JOIN WalkApplications ON WalkRequests.request_id = WalkApplications.request_id
     INNER JOIN Users ON WalkApplications.walker_id = Users.user_id
-    WHERE WalkRequests.status = 'completed') AS completed_wals
+    WHERE WalkRequests.status = 'completed') AS completed_walks
 FROM Users
 WHERE Users.role = 'walker';
