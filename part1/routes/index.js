@@ -10,7 +10,10 @@ router.get('/', function(req, res, next) {
 
 /* GET Dogs */
 router.get('/api/dogs', async function(req, res) {
-  const [rows] = await db.query('SELECT * FROM Users');
+  const [rows] = await db.query(`
+    SELECT Dogs.name AS dog_name, Dogs.size, Users.username AS owner_username FROM Dogs INNER JOIN Users
+    -> ON Dogs.owner_id = Users.user_id;
+    `);
   res.send(rows);
 });
 
