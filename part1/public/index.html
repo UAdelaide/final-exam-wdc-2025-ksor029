@@ -30,13 +30,13 @@
             el: '#app',
             data () {
                 return {
-                    message: null
+                    message: hello
                 }
             },
             mounted () {
                 axios
                 .get('https://dog.ceo/dog-api/documentation/random')
-                .then(response => (this.info = response))
+                .then(response => (this.message = response))
             }
         });
     </script>
