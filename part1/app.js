@@ -7,6 +7,13 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+var mysql = require('mysql');
+
+var dbConnectionPool = mysql.createPool({
+    host: 'localhost',
+    database: 'dogwalks'
+});
+
 var app = express();
 
 // view engine setup
@@ -38,4 +45,42 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+module.exports = app;
+
+
+
+
+
+
+
+const express = require('express');
+const path = require('path');
+require('dotenv').config();
+
+
+
+const app = express();
+
+// Middleware
+app.use(function(req, res, next){
+    req.pool = dbConnectionPool;
+    next();
+});
+
+app.use(express.json());
+app.use(express.static(path.join(__dirname, '/public')));
+
+// Routes
+
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+
+
+// const walkRoutes = require('./routes/walkRoutes');
+// const userRoutes = require('./routes/userRoutes');
+
+// app.use('/api/walks', walkRoutes);
+// app.use('/api/users', userRoutes);
+
+// Export the app instead of listening here
 module.exports = app;
