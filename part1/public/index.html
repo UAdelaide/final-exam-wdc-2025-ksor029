@@ -58,10 +58,12 @@
             const bttn2 = document.getElementById('button-2');
             bttn2.style.display = 'none ';
 
-                    var xhttp = new XMLHttpRequest();
-        xhttp.onload = function() {
-
-        }
+            var xhttp = new XMLHttpRequest();
+            xhttp.onload = function() {
+                if (this.readyState == 4 && this.status == 200) {
+// do stuff if successful
+}
+            }
         }
     </script>
 
