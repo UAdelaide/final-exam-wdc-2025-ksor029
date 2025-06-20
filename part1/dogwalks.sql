@@ -82,7 +82,9 @@ FROM Users where username like 'alice123';
 INSERT INTO Dogs (name, size, owner_id)
 SELECT
     Sora, small, owner_id
-FROM Users where username like 'shadowcat11',
+FROM Users where username like 'shadowcat11';
+
+INSERT INTO Dogs (name, size, owner_id)
 SELECT
     Hades, large, owner_id
 FROM Users where username like 'shadowcat11';
