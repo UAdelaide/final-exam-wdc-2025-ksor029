@@ -5,7 +5,8 @@ const db = require('.../models/db');
 /* GET home page. */
 router.get('/api/dogs', function(req, res) {
   const [rows] = await db.query(
-    `SELECT * FROM `
-  )
+    `SELECT * FROM Dogs`
+  );
+  res.send(rows);
 
 });
