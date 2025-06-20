@@ -116,8 +116,7 @@ FROM Dogs where name like 'Hades';
 
 
 SELECT
-    Users.username AS walker_username
-    (SELECT COUNT(*)
-    FROM Dogs)
+    Users.username AS walker_username,
+    (SELECT COUNT(*) FROM Dogs)
 FROM Users
 WHERE Users.role = 'walker';
