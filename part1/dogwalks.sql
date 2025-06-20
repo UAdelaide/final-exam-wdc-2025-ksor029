@@ -66,7 +66,5 @@ VALUES
 
 INSERT INTO Dogs (name, size, owner_id)
 SELECT
-    Max AS name,
-    medium AS size,
-    user_id
+    'Max', 'medium', user_id
 FROM Users where username like 'alice123';
