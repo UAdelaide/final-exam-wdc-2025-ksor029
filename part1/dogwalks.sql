@@ -70,3 +70,4 @@ VALUES
 ('Sora', 'small', 'shadowcat11'),
 ('Hades', 'large', 'shadowcat11');
 
+INSERT INTO WalkRequests ()
