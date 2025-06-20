@@ -1,19 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-const db = require('../models/db.js');
-
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
-});
-
-router.get('/tae', async function(req, res) {
-  const [rows] = await db.query(
-    `SELECT * FROM Dogs`
-  );
-  res.send(rows);
 });
 
 module.exports = router;
