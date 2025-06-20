@@ -7,10 +7,14 @@ router.get('/', function(req, res, next) {
 });
 
 /* TEST API END POINTS */
-router.get('/', function(req, res, next){
-  //code
+router.get('/api/dogs', function(req, res, next){
+  // code
 });
-
-
+router.get('/', function(req, res, next){
+  // code
+});
+router.get('/', function(req, res, next){
+  // code
+});
 
 module.exports = router;
