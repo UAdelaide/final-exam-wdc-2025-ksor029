@@ -88,8 +88,19 @@ FROM Users where username like 'shadowcat11';
 INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status)
 SELECT
     dog_id, '2025-06-10 08:00:00', '30', 'Parklands', 'open'
-FROM Dogs where name like ''
-
+FROM Dogs where name like 'MAX',
+SELECT
+    dog_id, '2025-06-10 08:00:00', '30', 'Parklands', 'open'
+FROM Dogs where name like 'MAX',
+SELECT
+    dog_id, '2025-06-10 08:00:00', '30', 'Parklands', 'open'
+FROM Dogs where name like 'MAX',
+SELECT
+    dog_id, '2025-06-10 08:00:00', '30', 'Parklands', 'open'
+FROM Dogs where name like 'MAX',
+SELECT
+    dog_id, '2025-06-10 08:00:00', '30', 'Parklands', 'open'
+FROM Dogs where name like 'MAX';
 
 --VALUES
 --('1', '2025-06-10 08:00:00', '30', 'Parklands', 'open'),
