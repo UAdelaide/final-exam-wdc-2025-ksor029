@@ -68,7 +68,7 @@
                     const shitto = this.response.message;
                     doggoIMG.innerText = shitto;
 
-                    document.appendChild(doggoIMG);
+                    document.body.appendChild(doggoIMG);
                 }
             };
             xhttp.open('GET', 'https://dog.ceo/api/breeds/image/random');
