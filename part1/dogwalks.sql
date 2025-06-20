@@ -70,13 +70,13 @@ SELECT
 FROM Users where username like 'alice123',
 SELECT
     'Bella', 'small', user_id
-FROM Users where username like 'carol123';
+FROM Users where username like 'carol123',
 SELECT
     'Goofy', 'large', user_id
-FROM Users where username like 'alice123';
+FROM Users where username like 'alice123',
 SELECT
-    'Sora', 'small', ouser_idwner_id
-FROM Users where username like 'shadowcat11';
+    'Sora', 'small', user_id
+FROM Users where username like 'shadowcat11',
 SELECT
-    'Hades', 'large', owner_id
+    'Hades', 'large', user_id
 FROM Users where username like 'shadowcat11';
