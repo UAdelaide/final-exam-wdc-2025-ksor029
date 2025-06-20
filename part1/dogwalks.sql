@@ -126,6 +126,7 @@ SELECT
     (SELECT COUNT(*)
     FROM WalkApplications
     INNER JOIN WalkRequests ON WalkApplications.request_id = WalkRequests.request_id
+    INNER JOIN Users ON 
     )
 FROM Users
 WHERE Users.role = 'walker';
