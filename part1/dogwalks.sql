@@ -67,23 +67,23 @@ SELECT
     Max, medium, owner_id
 FROM Users where username like 'alice123',
 SELECT
-    'Bella', 'small', owner_id
+    Bella, small, owner_id
 FROM Users where username like 'carol123',
 SELECT
-    'Goofy', 'large', owner_id
+    Goofy, large, owner_id
 FROM Users where username like 'alice123',
 SELECT
-    'Sora', 'small', owner_id
+    Sora, small, owner_id
 FROM Users where username like 'shadowcat11',
 SELECT
-    'Hades', 'large', owner_id
+    Hades, large, owner_id
 FROM Users where username like 'shadowcat11';
 
 
 
 INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status)
 SELECT
-    dog_id, '2025-06-10 08:00:00', '30', 'Parklands', 'open'
+    dog_id, 2025-06-10 08:00:00', '30', 'Parklands', 'open'
 FROM Dogs where name like 'MAX',
 SELECT
     dog_id, '2025-06-10 09:30:00', '45', 'Beachside Ave', 'accepted'
