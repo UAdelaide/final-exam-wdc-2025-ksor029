@@ -80,20 +80,3 @@ FROM Users where username like 'shadowcat11',
 SELECT
     Hades, large, owner_id
 FROM Users where username like 'shadowcat11';
-
-INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status)
-SELECT
-    dog_id, 2025-06-10 08:00:00, 30, Parklands, open
-FROM Dogs where name like 'Max',
-SELECT
-    dog_id, 2025-06-10 09:30:00, 45, Beachside Ave, accepted
-FROM Dogs where name like 'Bella',
-SELECT
-    dog_id, 2025-06-10 08:00:00, 30, Parklands, open
-FROM Dogs where name like 'Goofy',
-SELECT
-    dog_id, 2025-06-11 07:00:00, 60, Byroden Blvd, open
-FROM Dogs where name like 'Sora',
-SELECT
-    dog_id, 2025-06-11 07:00:00, 60, Byroden Blvd, open
-FROM Dogs where name like 'Hades';
