@@ -112,5 +112,5 @@ FROM Dogs where name like 'Sora';
 
 INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status)
 SELECT
-    dog_id, 2025-06-11 07:00:00, 60, Byroden Blvd, open
+    dog_id, '2025-06-11 07:00:00', '60', 'Byroden Blvd', 'open'
 FROM Dogs where name like 'Hades';
