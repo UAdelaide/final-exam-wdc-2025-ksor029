@@ -66,6 +66,19 @@ INSERT INTO Dogs (name, size, owner_id)
 SELECT
     'Max', 'medium', owner_id
 FROM Users where username like 'alice123',
+
+SELECT
+    'Bella', 'small', owner_id
+FROM Users where username like 'carol123',
+SELECT
+    'Max', 'medium', owner_id
+FROM Users where username like 'alice123',
+SELECT
+    'Max', 'medium', owner_id
+FROM Users where username like 'alice123',
+SELECT
+    'Max', 'medium', owner_id
+FROM Users where username like 'alice123',
 SELECT
     'Max', 'medium', owner_id
 FROM Users where username like 'alice123',
