@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 /* GET Dogs */
 router.get('/api/dogs', async function(req, res) {
   const [rows] = await db.query(
-    `SELECT * FROM Dogs`
+    `SELECT * FROM Dogs;`
   );
   res.send(rows);
 });
