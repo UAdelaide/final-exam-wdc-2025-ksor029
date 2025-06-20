@@ -8,7 +8,12 @@ router.get('/', function(req, res, next) {
 
 /* TEST API END POINTS */
 router.get('/api/dogs', function(req, res, next){
-  req.pool.getConnec
+  req.pool.getConnection(function(err,connection) {
+  if (err) {
+    res.sendStatus(500);
+    return;
+  }
+});
 });
 router.get('/api/walkrequests/open', function(req, res, next){
   // code
