@@ -10,8 +10,7 @@ router.get('/', function(req, res, next) {
 router.get('/api/dogs', function(req, res, next){
   req.pool.getConnection(function(err,connection) {
     if (err) {
-      res.sendStatus(500);
-      return;
+      res.send('FUCK');
     }
   });
 });
