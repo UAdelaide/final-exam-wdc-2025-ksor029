@@ -11,7 +11,8 @@ app.use(express.static(path.join(__dirname, '/public')));
 var mysql = require('mysql');
 
 var dbConnectionPool = mysql.createPool({
-    host: 'localhost'
+    host: 'localhost',
+    database: 'dogwalks'
 });
 
 
