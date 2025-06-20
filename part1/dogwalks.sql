@@ -119,6 +119,6 @@ SELECT
     Users.username AS walker_username,
     (SELECT COUNT(*)
     FROM WalkRatings
-    WHERE Wa)
+    ON WalkRatings.walker_id = Users.username)
 FROM Users
 WHERE Users.role = 'walker';
